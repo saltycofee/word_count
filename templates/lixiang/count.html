@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>统计文字，你输入的文字个数为{{ count_num }}</h1>
+<br>
+<h2>你输入的文字</h2>
+{{ txt }}
+<h2>文字的出现频率</h2>
+<div>
+    {% for key,value in txt_dic %}
+    <li>{{ key }}===>{{ value }}</li>
+    {% endfor %}
+    </div>
+</body>
+</html>
